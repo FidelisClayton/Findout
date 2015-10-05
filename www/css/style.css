@@ -3,3 +3,152 @@
 	height: 100%;
 	background-color: black;
 }
+
+#iw-container  .iw-title {
+   font-family: 'Open Sans Condensed', sans-serif;
+   font-size: 22px;
+   font-weight: 400;
+   padding: 10px;
+   background-color: #48b5e9;
+   color: white;
+   margin: 1px;
+   border-radius: 2px 2px 0 0; /* De acordo com o arredondamento dos cantos da infowindow por padrão. */
+}
+
+.gm-style-iw {
+   width: 100% !important;
+   top: 0 !important;
+   left: 0 !important;
+   background-color: #fff;
+   box-shadow: 0 1px 6px rgba(178, 178, 178, 0.6);
+   border: 1px solid rgba(72, 181, 233, 0.6);
+   border-radius: 2px 2px 0 0;
+   position: fixed;
+}
+
+.titulo{
+	background-color: #3196F9;
+	width: 100%;
+}
+
+div#modal {
+     max-height: 180px;
+    height: 175px;
+    width: 100%;
+    position: absolute;
+    margin-top: -1px;
+    z-index: 2;
+    background-color: #3F51B5;
+    overflow: hidden;
+    transform: translateY(-150%);
+    box-shadow: -2px 4px 35px -8px rgba(0,0,0,1);
+}
+
+.ativo{
+	transition: 0.5s ease all;
+	transform: translateY(0) !important;
+}
+
+.inativo{
+  transition-delay: 1s;
+	transition: 0.8s ease all;
+	transform: translateY(-150%) !important;
+}
+
+div#modal h5{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	color: white;
+	font-style: italic;
+	font-size: 13pt;
+}
+
+div#modal p{
+	color: white;
+	text-align: center;
+}
+
+div#imagem {
+    height: 125px;
+    width: 38%;
+    max-width: 40%;
+    margin-left: 5px;
+    background-color: black;
+    overflow: hidden;
+    float: left;
+    margin-top: 8px;
+}
+
+div#conteudo {
+    display: inline-block;
+    float: right;
+    width: 60%;
+    padding: 5px;
+}
+
+div#imagem img{
+	height: 100%;
+	width: auto;
+}
+
+div#rodape {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #3F51B5;
+    border-top: 1px solid #303F9F;
+}
+
+div#rodape span {
+    float: right;
+}
+
+div#rodape span {
+    /* float: right; */
+    /* background-color: #FF5252; */
+    /* height: 28px; */
+    /* margin-right: 5px; */
+    text-align: center;
+    width: 100%;
+}
+
+paper-toolbar {
+	background-color: #303F9F !important;
+    z-index: 20;
+    box-shadow: 0px -6px 34px 0px rgba(0,0,0,0.63);
+}
+
+div#drawer {
+    z-index: 100;
+}
+
+
+#rodape li {
+    float: left;
+    height: 36px;
+    background-color: #3F51B5;
+    padding-top: 5px;
+    margin-left: 5px;
+    width: 48%;
+    text-alignt: justify !important;
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+div#rodape span {
+    /* float: right; */
+    /* background-color: #FF5252; */
+    /* height: 28px; */
+    /* margin-right: 5px; */
+    text-align: center;
+    width: 100%;
+}
+
+paper-button{
+    margin-top: -8px;
+    width: 100%;
+    color: white;
+}
+
+

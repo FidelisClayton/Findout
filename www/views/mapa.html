@@ -4,5 +4,21 @@
   <paper-icon-button icon="refresh"></paper-icon-button>
   <paper-icon-button icon="add">+</paper-icon-button>
 </paper-toolbar>
-        
+
+<div id="modal" ng-class="{ativo:modal, inativo:!modal}" >
+	<div id="imagem">
+		<img ng-src="{{loja.imagem}}" alt="">
+	</div>
+	<div id="conteudo">
+		<h5><b>{{loja.nome}}</b></h5> 
+		<p>{{loja.descricao}}</p>
+	</div>
+	<div id="rodape">
+		<ul>
+			<li><paper-button tabindex="0" ng-click="toggleModal(false)">Fechar</paper-button></li>
+			<li><a href="#/loja/1"><paper-button tabindex="0" ng-click="toggleModal(false)">Visualizar loja</paper-button></a></li>
+		</ul>
+	</div>
+</div>
+
 <div id="mapa"></div>

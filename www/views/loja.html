@@ -1,1 +1,30 @@
-<h1>{{pagina}}</h1>
+<paper-toolbar id="loja">
+  <paper-icon-button ng-click="backToMap()" src="img/arrow-left.png" raised></paper-icon-button>
+  <span class="title">{{loja}}</span>
+</paper-toolbar>
+
+
+
+<div id="loja">
+	
+	<paper-spinner ng-if="loading" ng-hide="!loading" class="loading" active></paper-spinner>
+
+	<div id="banner" ng-if="!loading">
+		<img src="img/batatinha.jpg" alt="">
+	</div>
+
+	<div id="produtos">
+		<div ng-if="!loading" ng-class="{'non-selected': selecionado != produto.id && selecionado != 0}" ng-repeat="produto in produtos" class="item-loja animate-repeat" ng-click="verProduto({{produto.id}})">			
+			<div class="imagem">
+				<img ng-src="{{produto.imagem}}" alt="">
+			</div>
+			<div class="descricao">
+				<p>{{produto.nome}}</p>
+				<div class="rating">
+					<img src="img/stars.png">
+				</div>
+				<h4>R$ {{produto.preco}} <span class="distancia">a 1KM</span></h4>
+			</div>
+		</div>
+	</div>
+</div>

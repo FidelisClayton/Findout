@@ -1,0 +1,128 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'angular-touch' ]
+2 info using npm@1.3.10
+3 info using node@v0.10.25
+4 warn package.json findout2@0.0.1 No repository field.
+5 verbose readDependencies using package.json deps
+6 verbose cache add [ 'angular-touch', null ]
+7 verbose cache add name=undefined spec="angular-touch" args=["angular-touch",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'angular-touch',
+8 verbose parsed url   path: 'angular-touch',
+8 verbose parsed url   href: 'angular-touch' }
+9 silly lockFile 2877a31c-angular-touch angular-touch
+10 verbose lock angular-touch /home/clayton/.npm/2877a31c-angular-touch.lock
+11 silly lockFile 2877a31c-angular-touch angular-touch
+12 silly lockFile 2877a31c-angular-touch angular-touch
+13 verbose addNamed [ 'angular-touch', '' ]
+14 verbose addNamed [ null, '*' ]
+15 silly lockFile 636c6ee4-angular-touch angular-touch@
+16 verbose lock angular-touch@ /home/clayton/.npm/636c6ee4-angular-touch.lock
+17 silly addNameRange { name: 'angular-touch', range: '*', hasData: false }
+18 verbose url raw angular-touch
+19 verbose url resolving [ 'https://registry.npmjs.org/', './angular-touch' ]
+20 verbose url resolved https://registry.npmjs.org/angular-touch
+21 info trying registry request attempt 1 at 11:16:59
+22 http GET https://registry.npmjs.org/angular-touch
+23 http 200 https://registry.npmjs.org/angular-touch
+24 silly registry.get cb [ 200,
+24 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+24 silly registry.get     etag: '"CEOCIG33K9E88BW9COZM8Y71S"',
+24 silly registry.get     'content-type': 'application/json',
+24 silly registry.get     'cache-control': 'max-age=60',
+24 silly registry.get     'content-length': '54059',
+24 silly registry.get     'accept-ranges': 'bytes',
+24 silly registry.get     date: 'Sun, 18 Oct 2015 13:17:01 GMT',
+24 silly registry.get     via: '1.1 varnish',
+24 silly registry.get     age: '0',
+24 silly registry.get     connection: 'keep-alive',
+24 silly registry.get     'x-served-by': 'cache-dfw1826-DFW',
+24 silly registry.get     'x-cache': 'MISS',
+24 silly registry.get     'x-cache-hits': '0',
+24 silly registry.get     'x-timer': 'S1445174221.449178,VS0,VE184',
+24 silly registry.get     vary: 'Accept' } ]
+25 silly addNameRange number 2 { name: 'angular-touch', range: '*', hasData: true }
+26 silly addNameRange versions [ 'angular-touch',
+26 silly addNameRange   [ '1.3.0-rc.5',
+26 silly addNameRange     '1.3.0',
+26 silly addNameRange     '1.3.1',
+26 silly addNameRange     '1.3.2',
+26 silly addNameRange     '1.3.3',
+26 silly addNameRange     '1.3.4-build.3587',
+26 silly addNameRange     '1.2.27',
+26 silly addNameRange     '1.3.4',
+26 silly addNameRange     '1.3.5',
+26 silly addNameRange     '1.3.6',
+26 silly addNameRange     '1.3.7',
+26 silly addNameRange     '1.2.28',
+26 silly addNameRange     '1.3.8',
+26 silly addNameRange     '1.4.0-beta.0',
+26 silly addNameRange     '1.3.9',
+26 silly addNameRange     '1.3.10',
+26 silly addNameRange     '1.4.0-beta.1',
+26 silly addNameRange     '1.4.0-beta.2',
+26 silly addNameRange     '1.3.11',
+26 silly addNameRange     '1.4.0-beta.3',
+26 silly addNameRange     '1.3.12',
+26 silly addNameRange     '1.3.13',
+26 silly addNameRange     '1.4.0-beta.4',
+26 silly addNameRange     '1.3.14',
+26 silly addNameRange     '1.4.0-beta.5',
+26 silly addNameRange     '1.4.0-beta.6',
+26 silly addNameRange     '1.3.15',
+26 silly addNameRange     '1.4.0-rc.0',
+26 silly addNameRange     '1.4.0-rc.1',
+26 silly addNameRange     '1.4.0-rc.2',
+26 silly addNameRange     '1.4.0',
+26 silly addNameRange     '1.3.16',
+26 silly addNameRange     '1.4.1',
+26 silly addNameRange     '1.4.2',
+26 silly addNameRange     '1.3.17',
+26 silly addNameRange     '1.4.3',
+26 silly addNameRange     '1.4.4',
+26 silly addNameRange     '1.3.18',
+26 silly addNameRange     '1.4.5',
+26 silly addNameRange     '1.3.19',
+26 silly addNameRange     '1.4.6',
+26 silly addNameRange     '1.5.0-beta.0',
+26 silly addNameRange     '1.2.29',
+26 silly addNameRange     '1.3.20',
+26 silly addNameRange     '1.4.7' ] ]
+27 verbose addNamed [ 'angular-touch', '1.4.7' ]
+28 verbose addNamed [ '1.4.7', '1.4.7' ]
+29 silly lockFile 8da43ebc-angular-touch-1-4-7 angular-touch@1.4.7
+30 verbose lock angular-touch@1.4.7 /home/clayton/.npm/8da43ebc-angular-touch-1-4-7.lock
+31 silly lockFile 5dcb813b-ar-touch-angular-touch-1-4-7-tgz https://registry.npmjs.org/angular-touch/-/angular-touch-1.4.7.tgz
+32 verbose lock https://registry.npmjs.org/angular-touch/-/angular-touch-1.4.7.tgz /home/clayton/.npm/5dcb813b-ar-touch-angular-touch-1-4-7-tgz.lock
+33 verbose addRemoteTarball [ 'https://registry.npmjs.org/angular-touch/-/angular-touch-1.4.7.tgz',
+33 verbose addRemoteTarball   '90349506cd60963db60613e934147165db6cbe39' ]
+34 silly lockFile 5dcb813b-ar-touch-angular-touch-1-4-7-tgz https://registry.npmjs.org/angular-touch/-/angular-touch-1.4.7.tgz
+35 silly lockFile 5dcb813b-ar-touch-angular-touch-1-4-7-tgz https://registry.npmjs.org/angular-touch/-/angular-touch-1.4.7.tgz
+36 silly lockFile 8da43ebc-angular-touch-1-4-7 angular-touch@1.4.7
+37 silly lockFile 8da43ebc-angular-touch-1-4-7 angular-touch@1.4.7
+38 silly lockFile 636c6ee4-angular-touch angular-touch@
+39 silly lockFile 636c6ee4-angular-touch angular-touch@
+40 error Error: EACCES, mkdir '/home/clayton/tmp/npm-13861-juUT28zE'
+40 error  { [Error: EACCES, mkdir '/home/clayton/tmp/npm-13861-juUT28zE']
+40 error   errno: 3,
+40 error   code: 'EACCES',
+40 error   path: '/home/clayton/tmp/npm-13861-juUT28zE' }
+41 error Please try running this command again as root/Administrator.
+42 error System Linux 3.19.0-30-generic
+43 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "angular-touch"
+44 error cwd /home/clayton/Documentos/findout
+45 error node -v v0.10.25
+46 error npm -v 1.3.10
+47 error path /home/clayton/tmp/npm-13861-juUT28zE
+48 error code EACCES
+49 error errno 3
+50 error stack Error: EACCES, mkdir '/home/clayton/tmp/npm-13861-juUT28zE'
+51 verbose exit [ 3, true ]

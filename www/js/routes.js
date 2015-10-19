@@ -8,7 +8,7 @@ angular.module('findOut').config(function($routeProvider){
       templateUrl: "/views/loja.html",
       controller: "LojaCtrl"
     }).
-    when("/produto/:id", {
+    when("/loja/:idLoja/produto/:idProduto", {
       templateUrl: "/views/produto.html",
       controller: "ProdutoCtrl"
     })

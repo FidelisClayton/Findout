@@ -36,7 +36,7 @@ div#modal {
     height: 175px;
     width: 100%;
     position: absolute;
-    margin-top: -1px;
+    margin-top: 50px;
     z-index: 2;
     background-color: #3F51B5;
     overflow: hidden;
@@ -113,10 +113,16 @@ div#rodape span {
     width: 100%;
 }
 
-paper-toolbar {
+paper-toolbar#loja {
 	background-color: #303F9F !important;
     z-index: 20;
-    box-shadow: 0px -6px 34px 0px rgba(0,0,0,0.63);
+    position: fixed;
+    width: 100%;
+}
+
+paper-toolbar {
+    background-color: #303F9F !important;
+    z-index: 20;
 }
 
 div#drawer {
@@ -151,4 +157,329 @@ paper-button{
     color: white;
 }
 
+#banner img {
+    width: 100%;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: -35px;
+    -webkit-filter: blur(0px) contrast(2);
+    filter: blur(10px);
+}
 
+#banner {
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
+#banner label {
+    position: relative;
+    color: #FFF;
+    font-size: 18pt;
+    z-index: 2;
+    margin-left: 30px;
+    top: 150px;
+}
+
+paper-card {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 6px;
+    width: 95%;
+    margin: 0 auto;
+    height: 130px;
+    margin-bottom: 5px;
+}
+
+.card-content img {
+    height: 90px;
+    max-width: 35%;
+    display: inline;
+}
+
+.card-content span {
+    float: right;
+    display: inline;
+    height: 80px;
+    width: 60%;
+    margin-top: 15px
+}
+
+#main.paper-drawer-panel > [main] {
+    height: 100%;
+    background-color: #d0d0d0;
+    overflow: overlay;
+    background-image: url('../img/skulls.png');
+}
+
+paper-toolbar#mapa-toolbar { 
+    position: fixed;
+    width: 100%;
+}
+
+#produtos {
+  margin-top: 10px;
+}
+
+div#loja {
+  padding-top: 56px;
+  /*background-color: rgba(208, 208, 208, 0.53);*/
+}
+
+#filtros{
+    background-color: dodgerblue;
+    height: 40px;
+}
+
+.item-loja{
+    min-height: 120px;
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-ms-flex;
+    display:flex;
+
+    -webkit-box-shadow: -1px 1px 6px 0px rgba(82,82,82,0.58);
+    -moz-box-shadow: -1px 1px 6px 0px rgba(82,82,82,0.58);
+    box-shadow: -1px 1px 6px 0px rgba(82,82,82,0.58);
+}
+
+.item-loja .imagem{
+    width: 40%;
+    max-width: 40%;
+    height: 120px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.item-loja .imagem img{
+    height: 100%;
+    overflow: hidden;
+    display: block;
+    margin: 0 auto;
+}
+
+.item-loja .descricao{
+    width: 60%;
+    max-width: 60%;
+    height: auto;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.item-loja .descricao p{
+    font-size: 13pt;
+}
+
+.item-loja .descricao h4{
+    font-size: 18pt;
+    color: #303F9F;
+    font-weight: bold;
+}
+
+.item-loja .descricao span{
+    font-size: 12pt;
+}
+
+.item-loja .descricao .rating{
+    height: 30px;
+    width: 150px;
+}
+
+.item-loja .descricao .rating img{
+    height: 100%;
+}
+
+
+#banner.ng-enter{
+  transition: 0.5s ease all;
+  opacity:0;
+}
+
+#banner.ng-enter.ng-enter-active{
+  opacity:1;
+}
+
+#banner.ng-enter.ng-enter-active{
+  opacity:1;
+}
+
+#banner.ng-leave.ng-leave-active{
+    opacity:0;
+}
+
+.item-loja.ng-enter{
+  transition: 0.5s ease all;
+  opacity:0;
+  transform: translateX(-100%);
+}
+
+
+.item-loja.ng-enter-stagger{
+    transition-delay: 0.1s;
+    transition-duration: 0s;
+}
+
+.item-loja.ng-enter.ng-enter-active{
+  opacity:1;
+  transform: translateX(0);
+}
+
+
+.item-loja.ng-leave-stagger{
+    transition-delay: 0.1s;
+    transition-duration: 0s;
+}
+
+.item-loja.ng-leave.ng-leave-active{
+    transform:translateX(-100%);
+    opacity:0;
+}
+
+.item-loja.non-selected {
+    transform: translateX(-150%);
+    transition: 1s ease all;
+}
+
+#produto{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding-bottom: 70px;
+    padding-top: 65px;
+}
+
+#produto #imagem-produto{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+}
+
+#produto #imagem-produto img{
+    height: 100%;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#produto #descricao{
+    margin-top: 15px;
+    border-top: 1px solid #E3E3E3;
+    width: 100%;
+    background-color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+
+#produto #descricao h4{
+    text-align: center;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16pt;
+    color: #303F9F;
+    font-weight: bold;
+}
+
+#produto #descricao p{    
+    border-top: 1px solid #E3E3E3;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+#produto #preco-rating{
+    display:-webkit-flex;
+    display:-moz-flex;
+    display:-ms-flex;
+    display:flex;
+}
+
+#produto #descricao #preco{
+    width: 50%;
+}
+
+#produto #descricao #rating{
+    width: 50%;
+    height: 30px;
+}
+
+#produto #descricao #rating img{
+    height: 100%;
+    display: block;
+    margin-bottom: 0 auto;
+}
+
+#produto #descricao #rating span{
+    font-size: 8pt;
+    text-align: center;
+    width: 100%;
+}
+
+#produto #grafico{
+    height: 200px;
+    padding: 30px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+paper-toolbar#produto-toolbar{
+    position: fixed;
+    width: 100%;
+}
+
+paper-toolbar#produto-toolbar span{
+    text-align: center;
+    width: 60%;
+}
+
+ h4{
+    text-align: center;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+    font-size: 16pt;
+    color: #303F9F;
+    font-weight: bold;
+}
+
+paper-spinner.loading{
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-top: -19px;
+    margin-left: -19px;
+    width: 38px;
+    height: 38px;
+}
+
+.view-animate.ng-enter, .view-animate.ng-leave {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+
+  display:block;
+  width:100%;
+
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+
+.view-animate.ng-enter {
+  left:100%;
+}
+.view-animate.ng-enter.ng-enter-active {
+  left:0;
+}
+.view-animate.ng-leave.ng-leave-active {
+  left:-100%;
+}

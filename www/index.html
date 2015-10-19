@@ -7,12 +7,24 @@
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/angular-chart.js/dist/angular-chart.css">
+
+    <link href="lib/angular-carousel/dist/angular-carousel.min.css" rel="stylesheet" >
 
     <script src="lib/ionic/js/ionic.bundle.js"></script>
     <script src="cordova.js"></script>
+
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="lib/angular-route/angular-route.js"></script>
+    <script src="lib/ngGeolocation/ngGeolocation.min.js"></script>
+    <script src="lib/Chart.js/Chart.js"></script>
+    <script src="lib/angular-chart.js/dist/angular-chart.js"></script>
+        
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+
     <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAUTSkvMpQcZ7Cie6W0QSZ3igiEsBsOIaY&sensor=true"></script>
+
+   
 
     <script src="js/app.js"></script>
     <script src="js/routes.js"></script>
@@ -20,6 +32,7 @@
     <script src="js/controllers/mapaCtrl.js"></script>
     <script src="js/controllers/lojaCtrl.js"></script>
     <script src="js/controllers/produtoCtrl.js"></script>
+    <script src="bower_components/angular-parallax/angular-parallax.js"></script>
 
     <link rel="import" href="lib/iron-icons/iron-icons.html">
     <link rel="import" href="lib/paper-icon-button/paper-icon-button.html">
@@ -27,14 +40,20 @@
     <link rel="import" href="lib/paper-drawer-panel/paper-drawer-panel.html">
     <link rel="import" href="lib/paper-ripple-/paper-ripple.html">
     <link rel="import" href="lib/paper-button/paper-button.html">
+    <link rel="import" href="lib/paper-card/paper-card.html">
+    <link rel="import" href="lib/paper-spinner/paper-spinner.html">
+
+    <script>
+
+    </script>
 
   </head>
   <body ng-app="findOut">
   
     <paper-drawer-panel id="paperDrawerPanel">
       <div drawer>Eita</div>
-      <div main>
-        <ng-view></ng-view>
+      <div main id="main">
+        <ng-view class="view-animate"></ng-view>
       </div>
     </paper-drawer-panel>
     
